@@ -1,1 +1,15 @@
 // Mixins in here
+
+.flex(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.bordered() {
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.border-test(){
+    border: 1px solid black;
+}
