@@ -1,1 +1,30 @@
 // Navigation Styles here
+.head-container {
+    width: 100%;
+    .bordered(); 
+}
+
+header {
+    max-width: 800px;
+    width: 95%;
+    margin: 1.5rem auto;
+    .flex(space-between, center);
+
+    .company-logo {
+        margin: 0;
+    }
+    
+    nav {
+        margin: 1rem;
+        width: 50%;
+        .flex(space-around, center);
+        a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: @shark;
+        }  
+    }
+    @media @mobile {
+        flex-direction: column;
+    }
+}

@@ -1,1 +1,27 @@
 // Mixins in here
+
+.flex(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.bordered() {
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.border-test(){
+    border: 1px solid black;
+}
+
+.button() {
+    background-color: @button-bg;
+    width: 70%;
+    height: 15%;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    line-height: 3.75rem;
+    border-radius: 8px;
+    font-weight: bold;
+}
